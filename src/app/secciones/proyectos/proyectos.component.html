@@ -1,0 +1,90 @@
+<!-- <div class="accordion animated-box in">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="proyectos-titulo">
+      <button class="accordion-button text-md-center" type="button" data-bs-toggle="collapse"
+        data-bs-target="#proyectos-collapse" aria-expanded="true" aria-controls="proyectos-collapse">
+        <h2 class="m-auto p-2 pb-3">Proyectos</h2>
+      </button>
+    </h2>
+
+    <div id="proyectos-collapse" class="accordion-collapse collapse show" aria-labelledby="proyectos-titulo">
+
+      <div class="accordion-body">
+
+
+        <div class="row align-content-center justify-content-center">
+
+
+          <app-chips-autocomplete placeholder="Add technology..." label="Technologies" [projects]="projects"
+            (selectorTecnologiasEvent)="leerSelectorTecnologias($event)"></app-chips-autocomplete>
+
+
+          <div class="row p-0">
+
+            @for (item of proyectosAMostrar()().reverse(); track item) {
+            <div class="col-12 col-lg-6 mb-4">
+              <app-card [imagen]="item.imagen" [titulo]="item.titulo" [descripcion]="item.descripcion"
+                [tecnologias]="item.tecnologias" [links]="item.links"></app-card>
+            </div>
+            }
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 100px; padding-bottom: 24px;">
+
+  <div style="height: 100%;">
+
+
+    <div class="w-100 text-center" style="height: 10%;">
+      <h2 class="m-auto p-2 pb-4">Proyectos</h2>
+    </div>
+
+    <div class="w-100 d-flex flex-column-reverse flex-wrap justify-content-center muestra-proyectos" style="height: 90%;">
+
+
+
+      <div class="row align-content-center justify-content-center">
+
+
+        <app-chips-autocomplete placeholder="Add technology..." label="Technologies" [projects]="projects"
+          (selectorTecnologiasEvent)="leerSelectorTecnologias($event)"></app-chips-autocomplete>
+
+
+        <div class="row p-2">
+
+          @for (item of proyectosAMostrar()().reverse(); track item) {
+          <div class="col-12 col-lg-6 mb-4">
+            <app-card [imagen]="item.imagen" [titulo]="item.titulo" [descripcion]="item.descripcion"
+              [tecnologias]="item.tecnologias" [links]="item.links"></app-card>
+          </div>
+          }
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+</div>

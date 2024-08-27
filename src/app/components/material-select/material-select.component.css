@@ -1,0 +1,42 @@
+mat-form-field{
+  width: 130px;
+}
+
+mat-select{
+  width: 100px;
+}
+
+.mdc-text-field--filled {
+  background-color: #2b3566 !important;
+}
+
+.mat-mdc-form-field-focus-overlay{
+  background-color: #2b3566 !important;
+}
+
+.mat-mdc-select-panel{
+  width: 100px;
+}
+
+mat-option{
+  width: 130px;
+  color: blueviolet;
+}
+
+mat-label{
+  color: blueviolet;
+}
+
+.mat-mdc-select{
+  color: blueviolet;
+}
+
+
+.mat-mdc-text-field-wrapper, .mdc-text-field, .mdc-text-field--filled{
+  background-color: aquamarine !important;
+}
+
+
+.mat-mdc-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-mdc-text-field-wrapper {
+  background-color: transparent !important;
+}

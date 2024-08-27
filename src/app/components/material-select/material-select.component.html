@@ -1,0 +1,14 @@
+<mat-form-field>
+
+  @if (idioma === "english") {
+    <mat-label>Language</mat-label>
+  }
+  @else {
+    <mat-label>Idioma</mat-label>
+  }
+  <mat-select [(value)]="idioma">
+    <mat-option value="espanol" (click)="cambioIdioma('espanol')">Español</mat-option>
+    <mat-option value="english" (click)="cambioIdioma('english')">English</mat-option>
+  </mat-select>
+
+</mat-form-field>

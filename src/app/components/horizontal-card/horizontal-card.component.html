@@ -1,0 +1,21 @@
+<div class="card mb-3" style="height: 100%;">
+  <div class="row g-0" style="overflow: auto; height: 100%;">
+    <div class="col-md-5">
+      <img [src]="imagen" class="img-fluid rounded-start" [alt]="empresa">
+    </div>
+    <div class="col-md-7 align-content-md-center">
+      <div class="card-body p-md-5">
+        <p class="card-text"><small class="text-muted">{{fecha}}</small></p>
+        <h4 class="card-title">{{puesto}}</h4>
+        <h5 class="card-title pb-md-3">
+          {{empresa}}
+          @if (ubicacion !== "") {
+            - {{ubicacion}}
+          }
+        </h5>
+        <p class="card-text" [innerText]="descripcion"></p>
+      </div>
+    </div>
+  </div>
+</div>
+

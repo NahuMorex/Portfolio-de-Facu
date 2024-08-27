@@ -1,0 +1,92 @@
+<div class="accordion animated-box in">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="educacion-titulo">
+      <button class="accordion-button text-md-center" type="button" data-bs-toggle="collapse" data-bs-target="#educacion-collapse" aria-expanded="true" aria-controls="educacion-collapse">
+        <h2 class="m-auto p-2 pb-3">Educacion</h2>
+      </button>
+    </h2>
+
+    <div id="educacion-collapse" class="accordion-collapse collapse show" aria-labelledby="educacion-titulo">
+
+      <div class="accordion-body">
+
+
+        <div class="bg-light">
+
+
+          @for (item of educaciones; track $index) {
+            <app-horizontal-card [imagen]="item.imagen" [puesto]="item.titulo" [descripcion]="item.descripcion" [empresa]="item.institucion" [fecha]="item.fecha"></app-horizontal-card>
+          }
+
+
+
+
+        </div>
+
+
+<!--
+        <button type="button" mat-flat-button  color="primary"
+          cdkOverlayOrigin
+          (click)="showOverlaySignal.set(!showOverlaySignal())"
+          #origin="cdkOverlayOrigin"
+          >
+            show modal
+        </button>
+
+        <span class="text-display">
+          is checkbox checked: {{ showTwoCheckbox.value }}
+        </span>
+
+        <ng-template
+          cdkConnectedOverlay
+          [cdkConnectedOverlayOrigin]="origin"
+          [cdkConnectedOverlayOpen]="showOverlaySignal()"
+        >
+          <div  class="overlay-body">
+            <div class="overlay-body-head">
+              <h3>
+                <ng-container *ngIf="showTwoCheckbox.value">Show Two</ng-container>
+                <ng-container *ngIf="!showTwoCheckbox.value">Show One</ng-container>
+              </h3>
+              <mat-checkbox color="primary" [formControl]="showTwoCheckbox">
+                Show Number TWO
+              </mat-checkbox>
+            </div>
+
+            <div class="overlay-body-grid">
+              <div>
+                <h4>Rxjs</h4>
+                <div *ngFor="let data of displayDataSource$ | async">
+                  {{ data }}
+                </div>
+              </div>
+
+              <div>
+                <h4>Signals</h4>
+                <div *ngFor="let data of displayDataSourceSignal()">
+                  {{ data }}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </ng-template>
+ -->
+
+
+
+<!--         <mat-checkbox [formControl]="showTwoCheckbox" style="color: white;">
+          Show Number TWO
+        </mat-checkbox> -->
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+

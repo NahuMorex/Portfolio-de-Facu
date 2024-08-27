@@ -1,0 +1,54 @@
+<!-- <div class="accordion animated-box in">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="experiencia-titulo">
+      <button class="accordion-button text-md-center" type="button" data-bs-toggle="collapse" data-bs-target="#experiencia-collapse" aria-expanded="true" aria-controls="experiencia-collapse">
+        <h2 class="m-auto p-2 pb-3">Experiencia</h2>
+      </button>
+    </h2>
+
+    <div id="experiencia-collapse" class="accordion-collapse collapse show" aria-labelledby="experiencia-titulo">
+
+      <div class="accordion-body">
+
+
+        @for (item of experiencia; track item.id) {
+
+          <div class="card">
+            <h5 class="card-header">{{item.puesto}}</h5>
+            <h6 class="card-header">{{item.fecha}}</h6>
+            <div class="card-body">
+              <h5 class="card-title">{{item.empresa}} - {{item.ubicacion}}</h5>
+              <p class="card-text">{{item.descripcion}}</p>
+            </div>
+          </div>
+
+        }
+
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div style="height: 100vh; padding-top: 100px; padding-bottom: 24px;">
+
+  <div style="height: 100%;">
+
+
+    <div class="w-100 text-center" style="height: 10%;">
+      <h2 class="m-auto p-2 pb-4">Experiencia</h2>
+    </div>
+
+    <div class="w-100 d-flex flex-column-reverse flex-wrap justify-content-center" style="height: 90%;">
+      @for (item of experiencia; track $index) {
+        <app-horizontal-card style="height: -webkit-fill-available;" [imagen]="item.imagen" [puesto]="item.puesto" [ubicacion]="item.ubicacion" [descripcion]="item.descripcion" [empresa]="item.empresa" [fecha]="item.fecha"></app-horizontal-card>
+      }
+    </div>
+
+
+  </div>
+
+</div>
+
+

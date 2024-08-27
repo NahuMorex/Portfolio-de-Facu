@@ -1,0 +1,17 @@
+<p>flujo works!</p>
+
+
+@if (ver) {
+  <h3>CUMPLE</h3>
+}
+@else {
+  <h3>NO CUMPLE</h3>
+}
+
+
+@for (proyecto of proyectos; track proyecto.id) {
+  <h4>{{proyecto.nombre}}</h4>
+}
+
+
+<button (click)="mostrar()"></button>

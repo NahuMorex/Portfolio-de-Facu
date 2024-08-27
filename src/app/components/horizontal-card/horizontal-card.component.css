@@ -1,0 +1,50 @@
+img{
+  width:100%;
+  height :100%;
+  object-fit: cover;
+}
+
+small{
+  font-size: large;
+}
+h4.card-title{
+  font-weight: bolder;
+  font-size: calc(1.275rem + .8vw);
+}
+h5.card-title{
+  font-weight: light;
+  font-size: calc(1rem + .7vw);
+}
+p.card-text{
+  font-size: 1.2rem;
+}
+
+
+
+/* @media screen and (max-width: 991px) {
+  .card-img-top img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .card-img-top{
+    height: auto;
+  }
+}
+
+*/
+
+@media screen and (max-width: 768px) {
+  small{
+    font-size: medium;
+  }
+  h4.card-title{
+    font-size: calc(1.275rem + .3vw);
+  }
+  h5.card-title{
+    font-size: 1.25rem;
+  }
+  p.card-text{
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,28 @@
+mat-card{
+  height: 100%;
+}
+
+
+.mat-mdc-card-outlined {
+  background-color: var(--light-background-color);
+/*   border-radius: 20px; */
+  color: var(--darker-complementary-color);
+}
+
+.mat-mdc-card-outlined:hover{
+  transform: scale(1.015);
+}
+
+.mat-mdc-standard-chip {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+mat-chip{
+  --sombra: 0px 0px 5px 1px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: var(--sombra);
+  -webkit-box-shadow: var(--sombra);
+  -moz-box-shadow: var(--sombra);
+
+}
+

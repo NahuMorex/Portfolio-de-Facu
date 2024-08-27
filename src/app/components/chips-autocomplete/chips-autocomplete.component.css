@@ -1,0 +1,41 @@
+.example-chip-list {
+  width: 100%;
+}
+
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-image: linear-gradient(to right bottom, #28232e, #2e2935, #352f3b, #3b3542, #423b49, #423b49, #423b49, #423b49, #3b3542, #352f3b, #2e2935, #28232e);
+}
+
+.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label {
+  color: #ffffff !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: #ffffff !important;
+}
+
+.mat-mdc-chip-remove::after {
+  background: #ffffff !important;
+}
+
+.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing {
+  color: #ffffff !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+  color: #ffffff !important;
+}
+
+.mdc-text-field__input::placeholder {
+  color: #ffffff !important;
+}
+
+div.mat-mdc-autocomplete-panel {
+  background-color: black;
+  background-image: linear-gradient(to top, #403948, #484050, #4f4758, #574f61, #5f5669, #5d5467, #5b5264, #595062, #4c4454, #403947, #342e3a, #28232e) !important;
+}
+
+.mat-mdc-option {
+  color: #ffffff !important;
+}
